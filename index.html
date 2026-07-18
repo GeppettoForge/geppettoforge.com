@@ -9,15 +9,10 @@
       content="Geppetto Forge is coming soon."
     />
     <link rel="canonical" href="https://geppettoforge.com/" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/assets/geppetto-forge-simple.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="/assets/geppetto-forge-simple.png"
-    />
+    <link rel="icon" type="image/svg+xml" href="/assets/geppetto-forge-simple.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Geppetto Forge" />
     <meta property="og:title" content="Geppetto Forge" />
@@ -48,11 +43,14 @@
   </head>
   <body>
     <main class="hero" aria-labelledby="coming-soon-title">
-      <img
-        class="hero__image"
-        src="assets/geppetto-forge-simple.png"
-        alt="Geppetto Forge logo"
-      />
+      <picture>
+        <source srcset="assets/geppetto-forge-simple.svg" type="image/svg+xml" />
+        <img
+          class="hero__image"
+          src="assets/geppetto-forge-simple.png"
+          alt="Geppetto Forge logo"
+        />
+      </picture>
       <h1 id="coming-soon-title" class="hero__title">Coming Soon</h1>
     </main>
   </body>
