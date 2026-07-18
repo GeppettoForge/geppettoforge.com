@@ -68,9 +68,14 @@ body::after {
   text-align: center;
 }
 
-.hero__image {
+.hero__logo {
   display: block;
   width: min(100%, clamp(36rem, 70vw, 76rem));
+}
+
+.hero__image {
+  display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
   filter:
@@ -126,7 +131,7 @@ body::after {
     padding-bottom: 2.25rem;
   }
 
-  .hero__image {
+  .hero__logo {
     width: min(100%, 36rem);
   }
 
