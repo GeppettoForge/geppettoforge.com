@@ -76,7 +76,6 @@ body::after {
   filter:
     drop-shadow(0 1.5rem 3rem rgba(0, 0, 0, 0.5))
     drop-shadow(0 0 2rem rgba(38, 132, 255, 0.18));
-  animation: rise-in 700ms ease-out both;
 }
 
 .hero__title {
@@ -86,7 +85,16 @@ body::after {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-muted);
-  animation: fade-up 850ms 120ms ease-out both;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero__image {
+    animation: rise-in 700ms ease-out both;
+  }
+
+  .hero__title {
+    animation: fade-up 850ms 120ms ease-out both;
+  }
 }
 
 @keyframes rise-in {
